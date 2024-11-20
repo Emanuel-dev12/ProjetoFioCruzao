@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.add.AddFragment"
-    android:padding="26dp">
+    android:padding="24dp">
 
 
     <EditText
-        android:id="@+id/addNome"
+        android:id="@+id/updateNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -21,18 +21,18 @@
         tools:layout_editor_absoluteX="166dp" />
 
     <EditText
-        android:id="@+id/addLocal"
+        android:id="@+id/updateLocal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="Local"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/addNome"
+        app:layout_constraintTop_toBottomOf="@+id/updateNome"
         tools:layout_editor_absoluteX="105dp" />
 
     <EditText
-        android:id="@+id/addIdade"
+        android:id="@+id/updateIdade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -40,14 +40,14 @@
         android:ems="10"
         android:hint="Idade"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/addLocal"
+        app:layout_constraintTop_toBottomOf="@+id/updateLocal"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/addbutton"
+        android:id="@+id/updatebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="add"
+        android:text="Atualizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
