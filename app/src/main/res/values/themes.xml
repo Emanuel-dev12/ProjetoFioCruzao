@@ -4,9 +4,9 @@
     <!-- Tema personalizado para o seu app, que herda de Theme.AppCompat -->
     <style name="Theme.ProjetoFioCruz" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Cores personalizadas -->
-        <item name="colorPrimary">#6200EE</item> <!-- Roxo claro -->
-        <item name="colorPrimaryDark">#3700B3</item> <!-- Roxo escuro -->
-        <item name="colorAccent">#03DAC5</item> <!-- Verde água -->
+        <item name="colorPrimary">#FF5722</item> <!-- Laranja vibrante -->
+        <item name="colorPrimaryDark">#E64A19</item> <!-- Laranja mais escuro -->
+        <item name="colorAccent">#FFC107</item> <!-- Amarelo -->
     </style>
 
 </resources>

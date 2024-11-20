@@ -31,7 +31,6 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.binding.apply {
             idTxt.text = currentItem.id.toString()
             nomeTxt.text = currentItem.nome
-            localTxt.text = currentItem.local
             idadeTxt.text = currentItem.idade.toString()
 
             rowLayout.setOnClickListener {

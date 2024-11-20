@@ -12,7 +12,7 @@ data class Paciente(
     val id: Int,
     var nome: String,
     var local: String,
-    var idade: Int
-):Parcelable
-    {
-}
+    var idade: Int,
+    var cpf: String, // CPF como String para preservar os 11 dígitos
+    var telefone: String // Número de telefone como String para maior flexibilidade no formato
+) : Parcelable

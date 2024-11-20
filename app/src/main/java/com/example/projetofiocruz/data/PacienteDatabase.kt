@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.projetofiocruz.model.Paciente
 
-@Database(entities = [Paciente::class], version = 1, exportSchema = false )
+@Database(entities = [Paciente::class], version = 2, exportSchema = false )
 abstract class PacienteDatabase: RoomDatabase() {
 
     abstract fun pacienteDao(): PacienteDao

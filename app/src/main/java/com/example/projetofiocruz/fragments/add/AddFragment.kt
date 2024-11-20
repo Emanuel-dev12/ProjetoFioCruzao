@@ -43,10 +43,12 @@ class AddFragment : Fragment() {
         val nome = binding.addNome.text.toString()
         val local = binding.addLocal.text.toString()
         val idade = binding.addIdade.text
+        val cpf = binding.addCpf.text.toString()
+        val numero = binding.addNum.text.toString()
 
-        if (inputCheck(nome, local, idade)){
+        if (inputCheck(nome, local, idade, cpf, numero)){
             // Criar Paciente
-            val paciente = Paciente(0, nome, local, Integer.parseInt(idade.toString()))
+            val paciente = Paciente(0, nome, local, Integer.parseInt(idade.toString()), cpf, numero)
             // Adicionar ao banco de dados
             mPacienteViewModel.addPaciente(paciente)
             Toast.makeText( requireContext(),"Adicionado!", Toast.LENGTH_SHORT).show()
@@ -58,7 +60,7 @@ class AddFragment : Fragment() {
 
     }
 
-    private fun inputCheck(nome: String, local: String, idade: Editable): Boolean {
+    private fun inputCheck(nome: String, local: String, idade: Editable, cpf: String, telefone:String): Boolean {
             return !(TextUtils.isEmpty(nome) && TextUtils.isEmpty(local) && idade.isEmpty())
     }
 

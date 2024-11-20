@@ -13,23 +13,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Nome"
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="166dp" />
+        tools:layout_editor_absoluteX="40dp" />
 
     <EditText
         android:id="@+id/updateLocal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Local"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/updateNome"
-        tools:layout_editor_absoluteX="105dp" />
+        tools:layout_editor_absoluteX="40dp" />
 
     <EditText
         android:id="@+id/updateIdade"
@@ -47,10 +48,39 @@
         android:id="@+id/updatebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#FF5722"
         android:text="Atualizar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/updateNum" />
+
+    <EditText
+        android:id="@+id/updateCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateIdade" />
+
+    <EditText
+        android:id="@+id/updateNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Número"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/updateCpf"
+        tools:layout_editor_absoluteX="32dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,6 +43,8 @@ class UpdateFragment : Fragment() {
         binding.updateNome.setText(args.currentPaciente.nome)
         binding.updateLocal.setText(args.currentPaciente.local)
         binding.updateIdade.setText(args.currentPaciente.idade.toString())
+        binding.updateCpf.setText(args.currentPaciente.cpf)
+        binding.updateNum.setText(args.currentPaciente.telefone)
 
         binding.updatebutton.setOnClickListener {
             updateItem()
@@ -57,10 +59,12 @@ class UpdateFragment : Fragment() {
         val nome = binding.updateNome.text.toString()
         val local = binding.updateLocal.text.toString()
         val idade = Integer.parseInt(binding.updateIdade.text.toString())
+        val cpf = binding.updateCpf.text.toString()
+        val numero = binding.updateNum.text.toString()
 
         if (inputCheck(nome, local, binding.updateIdade.text)) {
 
-            val updatedPaciente = Paciente(args.currentPaciente.id, nome, local, idade)
+            val updatedPaciente = Paciente(args.currentPaciente.id, nome, local, idade, cpf, numero)
 
             mPacienteViewModel.updatePaciente(updatedPaciente)
 
